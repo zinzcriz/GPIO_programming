@@ -12,13 +12,8 @@ int main()
 	while(1)
 	{
 	for(i=0;i<500000;i++);
-	GPIOC->BSRR = (1<<13);
-  for(i=0;i<500000
-		;i++);
-	GPIOC->BSRR = (1<<(13+16));
-	
-	
+	GPIOC->BSRR = (1<<13); //sets the port 9
+        for(i=0;i<500000;i++);
+	GPIOC->BSRR = (1<<(13+16)); //resets the port 9
 	}
-	
-
 }
